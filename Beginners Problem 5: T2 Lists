@@ -1,0 +1,40 @@
+      Biggest, Smallest and Average:
+numsList = [7, 6, 23, 8.18, 18, 8, 7.2, 85, 915, 12]
+max_num = max(numsList)
+max_index = numsList.index(max_num)
+min_num = min(numsList)
+min_index = numsList.index(min_num)
+average = sum(numsList) / len(numsList)
+print(f"The biggest number is {max_num} at position {max_index}.")
+print(f"The smallest number is {min_num} at position {min_index}.")
+print(f"The average of all the numbers is {average}.")
+
+
+      I Like Pesto:
+iLikePesto = []
+otherFoods = []
+for _ in range(8):
+    favorite_food = input("What's your favourite food? ")
+    if favorite_food.lower() == "pesto":
+        iLikePesto.append(favorite_food)
+    else:
+        otherFoods.append(favorite_food)
+print(f"Pesto is loved by {len(iLikePesto)} people!")
+for _ in range(len(iLikePesto)):
+    print("I like pesto")
+print("\nOther Foods:")
+for food in otherFoods:
+    print(food)
+
+
+      List of (good) cereals:
+cerealList = []
+while True:
+    cereal = input("Enter Cereal: ")
+    if cereal.lower() == "sultana and bran" or cereal.lower() == "weetbix":
+        break
+    else:
+      
+        print(cereal)
+        cerealList.append(cereal)
+print(cerealList)
